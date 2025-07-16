@@ -13,6 +13,32 @@ This project is a lightweight, PHP-based web application that demonstrates a Mod
   - Front-end and back-end validation to ensure data integrity.
   - Clear project structure to facilitate future enhancements.
 
+## Demo
+
+### Home Page
+
+![Home Page](public/img/Home.JPG)
+
+### Search Form
+
+![Search Form](public/img/Example_Search.JPG)
+
+### Full Results
+
+![Full Results](public/img/Example_Result.JPG)
+
+### Filtered Results
+
+![Filtered Results](public/img/Example_Result_Filterd.JPG)
+
+### Product Detail
+
+![Product Details](public/img/Example_Details.JPG)
+
+### Edit Record
+
+![Edit Record](public/img/Example_Edit.JPG)
+
 ## Skills Demonstrated
 
 - **Backend Development**: PHP 7+, PDO for safe database interactions, password hashing and salting, REST-style routing.
@@ -20,7 +46,6 @@ This project is a lightweight, PHP-based web application that demonstrates a Mod
 - **Front-End Development**: HTML5, CSS3 (including a custom `theme.css`), vanilla JavaScript for form validation, and Bootstrap classes for a responsive layout.
 - **Architecture & Design Patterns**: MVC separation of concerns, single-responsibility models, reusable views, and controller dispatch patterns.
 - **Version Control**: Git/GitHub for source management, feature branching, and pull-request workflow.
-
 
 ## Technologies Used
 
@@ -46,33 +71,3 @@ This project is a lightweight, PHP-based web application that demonstrates a Mod
 3. Run the SQL scripts in `sql/` to create and populate the database.
 4. Configure database credentials in `config.php`.
 5. Point your web server to the project’s `public/` directory.
-
-## Demo
-
-### Home Page
-
-![Home Page](public/img/Home.JPG)
-
-### Search Form
-
-![Search Form](public/img/Example_Search.JPG)
-
-### Filtered Results
-
-![Filtered Results](public/img/Example_Result_Filterd.JPG)
-
-### Full Results
-
-![Full Results](public/img/Example_Result.JPG)
-
-### Product Detail
-
-![Product Details](public/img/Example_Details.JPG)
-
-### Edit Record
-
-![Edit Record](public/img/Example_Edit.JPG)
-
-### Results for Product
-
-![Results for Product](public/img/Example_Result_Filterd.JPG)
