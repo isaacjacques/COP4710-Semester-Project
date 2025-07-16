@@ -13,6 +13,24 @@ This project is a lightweight, PHP-based web application that demonstrates a Mod
   - Front-end and back-end validation to ensure data integrity.
   - Clear project structure to facilitate future enhancements.
 
+## Skills Demonstrated
+
+- **Backend Development**: PHP 7+, PDO for safe database interactions, password hashing and salting, REST-style routing.
+- **Database Design**: MySQL schema design with normalized tables, relationships for orders, inventory history, and customer carts.
+- **Front-End Development**: HTML5, CSS3 (including a custom `theme.css`), vanilla JavaScript for form validation, and Bootstrap classes for a responsive layout.
+- **Architecture & Design Patterns**: MVC separation of concerns, single-responsibility models, reusable views, and controller dispatch patterns.
+- **Version Control**: Git/GitHub for source management, feature branching, and pull-request workflow.
+
+## Technologies Used
+
+| Layer                   | Technologies                       |
+| ----------------------- | ---------------------------------- |
+| Server                  | Apache, PHP 7+                     |
+| Database                | MySQL                              |
+| Front-End               | HTML5, CSS3, Bootstrap, JavaScript |
+| Tools                   | Git, GitHub, Composer              |
+| Development Environment | VS Code, XAMPP                     |
+
 ## Demo
 
 ### Home Page
@@ -38,24 +56,6 @@ This project is a lightweight, PHP-based web application that demonstrates a Mod
 ### Edit Record
 
 ![Edit Record](public/img/Example_Edit.JPG)
-
-## Skills Demonstrated
-
-- **Backend Development**: PHP 7+, PDO for safe database interactions, password hashing and salting, REST-style routing.
-- **Database Design**: MySQL schema design with normalized tables, relationships for orders, inventory history, and customer carts.
-- **Front-End Development**: HTML5, CSS3 (including a custom `theme.css`), vanilla JavaScript for form validation, and Bootstrap classes for a responsive layout.
-- **Architecture & Design Patterns**: MVC separation of concerns, single-responsibility models, reusable views, and controller dispatch patterns.
-- **Version Control**: Git/GitHub for source management, feature branching, and pull-request workflow.
-
-## Technologies Used
-
-| Layer                   | Technologies                       |
-| ----------------------- | ---------------------------------- |
-| Server                  | Apache, PHP 7+                     |
-| Database                | MySQL                              |
-| Front-End               | HTML5, CSS3, Bootstrap, JavaScript |
-| Tools                   | Git, GitHub, Composer              |
-| Development Environment | VS Code, XAMPP                     |
 
 ## Installation & Setup
 
