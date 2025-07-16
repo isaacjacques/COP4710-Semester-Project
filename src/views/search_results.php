@@ -3,13 +3,24 @@ $pageTitle = "Results — $table";
 require __DIR__ . '/partials/header.php';
 
 $used = array_filter($_GET['criteria'] ?? [], fn($v) => trim($v) !== '');
-$cols = array_keys($used);
-array_unshift($cols, $model->getPrimaryKey()); 
+if (empty($used)) {
+    $cols = $model->getColumns();
+} else {
+    $cols = array_keys($used);
+    array_unshift($cols, $model->getPrimaryKey());
+}
+
 ?>
 
 <div class="d-flex justify-content-between align-items-center mb-3">
   <h2>Results for <?= htmlspecialchars($table) ?></h2>
-  <a href="index.php" class="btn btn-outline-secondary">← New Search</a>
+  <div>
+    <a href="index.php" class="btn btn-outline-secondary">← New Search</a>
+    <a href="index.php?action=add&table=<?= urlencode($table) ?>"
+       class="btn btn-primary">
+      + Add New <?= htmlspecialchars($table) ?>
+    </a>
+  </div>
 </div>
 
 <?php if (empty($results)): ?>

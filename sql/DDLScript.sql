@@ -13,7 +13,7 @@ CREATE TABLE jacques_Customer (
     Email        VARCHAR(255),
     PasswordSalt VARCHAR(64),
     PasswordHash VARCHAR(64),
-    CreationTime DATETIME
+    CreationTime DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE jacques_Product (
@@ -25,7 +25,7 @@ CREATE TABLE jacques_Product (
     Brand        VARCHAR(32),
     PackSize     INT,
     Description  VARCHAR(255),
-    CreationTime DATETIME
+    CreationTime DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE jacques_CustomerCart (
@@ -33,7 +33,7 @@ CREATE TABLE jacques_CustomerCart (
     CustomerID   BIGINT      NOT NULL,
     ProductID    BIGINT      NOT NULL,
     ProductQty   INT         NOT NULL,
-    CreationTime DATETIME,
+    CreationTime DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (CustomerID) REFERENCES jacques_Customer(CustomerID) ON DELETE CASCADE,
     FOREIGN KEY (ProductID)  REFERENCES jacques_Product(ProductID)   ON DELETE CASCADE
 );
@@ -42,7 +42,7 @@ CREATE TABLE jacques_EcomOrder (
     OrderID      BIGINT      PRIMARY KEY,
     OrderStatus  VARCHAR(16),
     CustomerID   BIGINT      NOT NULL,
-    CreationTime DATETIME,
+    CreationTime DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (CustomerID) REFERENCES jacques_Customer(CustomerID) ON DELETE CASCADE
 );
 
@@ -51,7 +51,7 @@ CREATE TABLE jacques_EcomOrderDetail (
     OrderID       BIGINT      NOT NULL,
     ProductID     BIGINT      NOT NULL,
     ProductQty    INT         NOT NULL,
-    CreationTime  DATETIME,
+    CreationTime  DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (OrderID)   REFERENCES jacques_EcomOrder(OrderID)       ON DELETE CASCADE,
     FOREIGN KEY (ProductID) REFERENCES jacques_Product(ProductID)         ON DELETE CASCADE
 );
@@ -62,7 +62,7 @@ CREATE TABLE jacques_Inventory (
     ProductID      BIGINT      NOT NULL,
     ProductQty     INT         NOT NULL,
     LPN            VARCHAR(32),
-    CreationTime   DATETIME,
+    CreationTime   DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (ProductID) REFERENCES jacques_Product(ProductID) ON DELETE CASCADE
 );
 
@@ -71,7 +71,7 @@ CREATE TABLE jacques_InventoryHistory (
     InventoryID        BIGINT      NOT NULL,
     OrderDetailID      BIGINT      NOT NULL,
     ChangeQty          INT         NOT NULL,
-    CreationTime       DATETIME,
+    CreationTime       DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (InventoryID)   REFERENCES jacques_Inventory(InventoryID)     ON DELETE CASCADE,
     FOREIGN KEY (OrderDetailID) REFERENCES jacques_EcomOrderDetail(OrderDetailID) ON DELETE CASCADE
 );

@@ -46,3 +46,33 @@ This project is a lightweight, PHP-based web application that demonstrates a Mod
 3. Run the SQL scripts in `sql/` to create and populate the database.
 4. Configure database credentials in `config.php`.
 5. Point your web server to the project’s `public/` directory.
+
+## Demo
+
+### Home Page
+
+![Home Page](public/img/Home.JPG)
+
+### Search Form
+
+![Search Form](public/img/Example_Search.JPG)
+
+### Filtered Results
+
+![Filtered Results](public/img/Example_Result_Filterd.JPG)
+
+### Full Results
+
+![Full Results](public/img/Example_Result.JPG)
+
+### Product Detail
+
+![Product Details](public/img/Example_Details.JPG)
+
+### Edit Record
+
+![Edit Record](public/img/Example_Edit.JPG)
+
+### Results for Product
+
+![Results for Product](public/img/Example_Result_Filterd.JPG)
