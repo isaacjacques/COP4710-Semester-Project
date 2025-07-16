@@ -1,0 +1,64 @@
+:root {
+  /* Primary: deep forest green */
+  --bs-primary:    #2e7d32;
+  /* Secondary: soft mint green */
+  --bs-secondary:  #81c784;
+  /* Accent for success states: medium green */
+  --bs-success:    #388e3c;
+  /* Info highlights: light green */
+  --bs-info:       #66bb6a;
+  /* Warnings: warm amber */
+  --bs-warning:    #ffb74d;
+  /* Errors: gentle red */
+  --bs-danger:     #e57373;
+  /* Very light background with a hint of green */
+  --bs-light:      #f1f8e9;
+  /* Dark accents: deep pine */
+  --bs-dark:       #1b5e20;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
+
+.navbar.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.card {
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+}
+
+.btn-outline-secondary {
+  border-color: var(--bs-secondary);
+  color: var(--bs-secondary);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--bs-secondary);
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 .2rem rgba(46,125,50,.25);
+}
+
+.table thead {
+  background-color: var(--bs-secondary);
+  color: #fff;
+}
+
+.table-hover tbody tr:hover > td{
+  background-color: var(--bs-secondary);
+}
+
+.footer {
+  font-size: .9rem;
+  color: var(--bs-dark);
+  text-align: center;
+  padding: 1rem 0;
+}

@@ -1,0 +1,19 @@
+{
+    "name": "isaacjacques/cop4710-search-form-mvc",
+    "description": "A simple web site that properly utilizes PHP and MySQL using the MVC model.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "isaacjacques",
+            "email": "jacques.development@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
